@@ -9,7 +9,7 @@ Użyto następujących poleceń do linkowania:
 docker run -itd --name T2 -p 80:80 alpine
 docker run -itd --name T1 --link T2:mylink alpine
 ```
-Do sprawdzenia czy linkowanie pomyślnie przebiegło użyto następujących poleceń
+Do sprawdzenia czy linkowanie przebiegło pomyślnie użyto następujących poleceń
 `docker exec T1 ping -c 4 mylink`
 
 ![image](https://user-images.githubusercontent.com/47278535/168481548-efad0d66-5829-43a3-b92a-afe5a8d76284.png)
